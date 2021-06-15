@@ -1,0 +1,6 @@
+Screen documentation
+**************************
+In this module you will find the methods needed for interacting with the UI
+
+.. autoclass:: screen.Screen
+   :members:

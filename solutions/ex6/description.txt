@@ -1,0 +1,45 @@
+Hello,
+This script will edit your wav file,
+and edit it the way that you want it to.
+There is a couple of options to edit your wav file:
+1. Reverse - which will reverse the audio.
+2. Removing audio - this will remove the audio (still in development).
+3. Speed up - this will speed up the audio.
+4. Speed down - this will speed down the audio.
+5. Volume up - increase the volume of the audio.
+6. Volume down - decrease the volume of the audio.
+7. Reverb filter - put a Reverb filter on the audio.
+
+-----------START OF EXPLAINING FUNCTIONS-----------
+opening_menu() - This will print the opening menu, and check if the user inputted a good input, and return the input.
+
+edit_wav_menu() - This will print the options above, and let the user to input,
+		          and check if the user inputted a good input, and return the input.
+
+wav_load_file() - This function will load the wav file, and check if the file exists or not, and return 1 if the file has been loaded
+		          successfully.
+
+reverse_audio() - This function will reverse the audio, and return a list with the results.
+
+remove_audio() - This function will remove the audio completely (still in development), and return a list with the results.
+
+speed_up() - This function will make the audio play faster, and return a list with the results.
+
+speed_down() - This function will make the audio play slower, and return a list with the results.
+
+if_up_down_max_low_volume_up() - This function will multiply every audio data by 1.2, and check if it passed the maximum volume,
+				                 or the lowest volume.
+
+volume_up() - This function will increase the volume by 1.2.
+
+volume_down() - This function will decrease the volume by dividing 1.2.
+
+reverb() - This function will make a reverb effect on the audio.
+
+if_one() - This function will ask the user to input the wav filename if chose in the start (opening_menu function),
+           else just pass, and check what input the user chose (in edit_wav_menu function), and do as chosen.
+
+make_music() - This function will make a music of your own, by one text file.
+
+main() - This function will just clear the screen and run the functions.
+-----------END OF EXPLAINING FUNCTIONS-------------

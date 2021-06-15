@@ -1,0 +1,4 @@
+influenza fever cough
+meningitis fever
+cold cough
+healthy

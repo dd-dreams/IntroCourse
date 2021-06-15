@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Screen documentation &mdash; Asteroids 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Asteroids 1.0 documentation" href="index.html" />
+    <link rel="prev" title="Welcome to Asteroids’s documentation!" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Asteroids’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Asteroids 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="screen-documentation">
+<h1>Screen documentation<a class="headerlink" href="#screen-documentation" title="Permalink to this headline">¶</a></h1>
+<p>In this module you will find the methods needed for interacting with the UI</p>
+<dl class="class">
+<dt id="screen.Screen">
+<em class="property">class </em><code class="descclassname">screen.</code><code class="descname">Screen</code><a class="headerlink" href="#screen.Screen" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="screen.Screen.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>This inits our graphics class.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.draw_asteroid">
+<code class="descname">draw_asteroid</code><span class="sig-paren">(</span><em>asteroid</em>, <em>x</em>, <em>y</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.draw_asteroid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw the given asteroid on the specified (x,y) coordinates</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>asteroid</strong> (<em>Asteroid</em>) &#8211; This is your asteroid object (remember to register it before)</li>
+<li><strong>x</strong> (<em>int</em>) &#8211; This is the X coordinate of the asteroid</li>
+<li><strong>y</strong> (<em>int</em>) &#8211; This is the Y coordinate of the asteroid</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.draw_ship">
+<code class="descname">draw_ship</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>heading</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.draw_ship" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw the ship at the given coordinates with the given heading</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>x</strong> (<em>int</em>) &#8211; This is the X coordinate of the ship</li>
+<li><strong>y</strong> (<em>int</em>) &#8211; This is the Y coordinate of the ship</li>
+<li><strong>heading</strong> (<em>float</em>) &#8211; This is the heading of the ship (in degrees)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.draw_torpedo">
+<code class="descname">draw_torpedo</code><span class="sig-paren">(</span><em>torpedo</em>, <em>x</em>, <em>y</em>, <em>heading</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.draw_torpedo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw the given torpedo on the specified (x,y) coordinates with the given heading</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>asteroid</strong> (<em>Torpedo</em>) &#8211; This is your torpedo object (remember to register it before)</li>
+<li><strong>x</strong> (<em>int</em>) &#8211; This is the X coordinate of the torpedo</li>
+<li><strong>y</strong> (<em>int</em>) &#8211; This is the Y coordinate of the torpedo</li>
+<li><strong>heading</strong> (<em>float</em>) &#8211; This is the heading of the torpedo</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.end_game">
+<code class="descname">end_game</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.end_game" title="Permalink to this definition">¶</a></dt>
+<dd><p>This ends the current game.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.is_left_pressed">
+<code class="descname">is_left_pressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.is_left_pressed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the left key was pressed, else False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.is_right_pressed">
+<code class="descname">is_right_pressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.is_right_pressed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the right key was pressed, else False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.is_space_pressed">
+<code class="descname">is_space_pressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.is_space_pressed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the fire key was pressed, else False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.is_special_pressed">
+<code class="descname">is_special_pressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.is_special_pressed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the fire key was pressed, else False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.is_up_pressed">
+<code class="descname">is_up_pressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.is_up_pressed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the up key was pressed, else False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.is_teleport_pressed">
+<code class="descname">is_teleport_pressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.is_teleport_pressed" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the 't' key was pressed, else False</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.ontimer">
+<code class="descname">ontimer</code><span class="sig-paren">(</span><em>func</em>, <em>milli</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.ontimer" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is used to create a repeating action in your game.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>You don&#8217;t need to call this method, it was already called for you at the end of the main game loop.</strong></p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>func</strong> (<em>function</em>) &#8211; The function to repeat after <strong>milli</strong> milliseconds have passed</li>
+<li><strong>milli</strong> (<em>int</em>) &#8211; The amount of milliseconds to wait before starting the given
+function</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.register_asteroid">
+<code class="descname">register_asteroid</code><span class="sig-paren">(</span><em>asteroid</em>, <em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.register_asteroid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called to register a new asteroid in our system</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>asteroid</strong> (<em>Asteroid</em>) &#8211; This is your asteroid object</li>
+<li><strong>size</strong> (<em>int</em>) &#8211; The size of the asteroid (this should be in [1,2,3])</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.register_torpedo">
+<code class="descname">register_torpedo</code><span class="sig-paren">(</span><em>torpedo</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.register_torpedo" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called to register a new torpedo in our system</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>asteroid</strong> (<em>Torpedo</em>) &#8211; This is your torpedo object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.remove_life">
+<code class="descname">remove_life</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.remove_life" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove one icon of life (starts with 3 lives)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.set_score">
+<code class="descname">set_score</code><span class="sig-paren">(</span><em>val</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.set_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the current game score</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>val</strong> (<em>int</em>) &#8211; The game score</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.should_end">
+<code class="descname">should_end</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.should_end" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">True if the game should end or not (if &#8220;q&#8221; was pressed or not)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.show_message">
+<code class="descname">show_message</code><span class="sig-paren">(</span><em>title</em>, <em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.show_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a method used to show messages in the game.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>title</strong> (<em>str</em>) &#8211; The title of the message box.</li>
+<li><strong>msg</strong> (<em>str</em>) &#8211; The message to show in the message box.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.start_screen">
+<code class="descname">start_screen</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.start_screen" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called to start our game (grphaics-wise).</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>This method should not be called by you</strong></p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.unregister_asteroid">
+<code class="descname">unregister_asteroid</code><span class="sig-paren">(</span><em>asteroid</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.unregister_asteroid" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called to un-register an existing asteroid in our system</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>asteroid</strong> (<em>Asteroid</em>) &#8211; This is your asteroid object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.unregister_torpedo">
+<code class="descname">unregister_torpedo</code><span class="sig-paren">(</span><em>torpedo</em><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.unregister_torpedo" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called to un-register an existing torpedo in our system</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>asteroid</strong> (<em>Torpedo</em>) &#8211; This is your torpedo object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="screen.Screen.update">
+<code class="descname">update</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#screen.Screen.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is called to update our game (grphaics-wise).</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last"><strong>This method should not be called by you</strong></p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to Asteroids&#8217;s documentation!</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/screen.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Asteroids’s documentation!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Asteroids 1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2015, Intro Staff.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.3.
+    </div>
+  </body>
+</html>
